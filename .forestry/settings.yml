@@ -10,6 +10,13 @@ sections:
   path: content/_index.md
   label: Home
 - type: directory
+  path: content/pages
+  label: Pages
+  create: documents
+  match: "**/*"
+  templates:
+  - home
+- type: directory
   path: content/post
   label: Posts
   create: all
